@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .content {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .reservation-details {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Reservasi Berhasil!</h2>
+        </div>
+        
+        <div class="content">
+            <p>Dear {{userName}},</p>
+            
+            <p>Terima kasih telah melakukan reservasi. Berikut adalah detail reservasi Anda:</p>
+            
+            <div class="reservation-details">
+                <p><strong>Nomor Reservasi:</strong> #{{reservationId}}</p>
+                <p><strong>Tanggal:</strong> {{date}}</p>
+                <p><strong>Waktu:</strong> {{time}}</p>
+                <p><strong>Status:</strong> {{status}}</p>
+            </div>
+            
+            <h3>Informasi Penting:</h3>
+            <ul>
+                <li>Harap datang 15 menit sebelum waktu reservasi</li>
+                <li>Tunjukkan email ini sebagai bukti reservasi</li>
+                <li>Reservasi akan dibatalkan jika Anda terlambat lebih dari 30 menit</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Jika Anda memiliki pertanyaan, silakan hubungi kami di:</p>
+            <p>Email: support@example.com | Telp: (021) 123-4567</p>
+        </div>
+    </div>
+</body>
+</html>
